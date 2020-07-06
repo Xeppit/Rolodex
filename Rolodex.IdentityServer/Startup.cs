@@ -18,7 +18,7 @@ namespace Rolodex.IdentityServer
         {
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
-                .AddInMemoryApiResources(Config.GetAllApiResources())
+                .AddInMemoryApiScopes(Config.GetAllApiResources())
                 .AddInMemoryClients(Config.GetClients());
         }
 

@@ -8,11 +8,11 @@ namespace Rolodex.IdentityServer
 {
     public class Config
     {
-        public static IEnumerable<ApiResource> GetAllApiResources()
+        public static IEnumerable<ApiScope> GetAllApiResources()
         {
-            return new List<ApiResource>
+            return new List<ApiScope>
             {
-                new ApiResource("rolodexApi", "Address Api for Rolodex")
+                new ApiScope("rolodexApi", "Address Api for Rolodex")
             };
         }
 
