@@ -30,6 +30,14 @@ namespace Rolodex.API
             services.AddDbContext<AddressContext>(options => 
                 options.UseInMemoryDatabase("AddressDb"));
 
+            services.AddAuthentication("bearer")
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://localhost:5003";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiName = "rolodexApi";
+                });
+
             services.AddControllers();
         }
 
@@ -44,6 +52,8 @@ namespace Rolodex.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
