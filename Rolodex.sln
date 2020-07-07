@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rolodex.API", "Rolodex.API\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rolodex.IdentityServer", "Rolodex.IdentityServer\Rolodex.IdentityServer.csproj", "{1D0DD174-2267-462F-BE73-042A6021636F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolodex.ConsoleClient", "Rolodex.ConsoleClient\Rolodex.ConsoleClient.csproj", "{713974DE-4DDD-4130-B1C1-CD6110836750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D0DD174-2267-462F-BE73-042A6021636F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D0DD174-2267-462F-BE73-042A6021636F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D0DD174-2267-462F-BE73-042A6021636F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713974DE-4DDD-4130-B1C1-CD6110836750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713974DE-4DDD-4130-B1C1-CD6110836750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713974DE-4DDD-4130-B1C1-CD6110836750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713974DE-4DDD-4130-B1C1-CD6110836750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
